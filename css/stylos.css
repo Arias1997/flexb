@@ -1,0 +1,257 @@
+*{
+    box-sizing: border-box; /* completar para que sirve esta etiqueta*/
+}
+
+/* aplica a todo el body */
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado */
+header{
+    text-align: center;
+    /* background-color: rgb(0, 128, 128); */
+    background-image: url("../img/bannerOfi_Mesa\ de\ trabajo\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 60px;
+}
+header h1{
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+header p{
+    margin: 0 0 10px;
+}
+header div{
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos del navegacion */
+nav{
+    display: flex;
+    flex-direction: row; /*  aplica a fila*/
+    /* align-items: center; */
+    justify-content: center;
+    background-color: rgb(0, 16, 20);
+}
+nav a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    /* border: solid 1px  ; */
+    text-align: center;
+    
+}
+nav a:hover{
+    background-color: rgb(0, 44, 42);
+    color: rgb(139, 255, 255);
+}
+
+/* estilos de main  */
+.row{
+    display: flex;
+    flex-wrap: wrap;/*  se acomoda de acuerdo a su tamaño*/
+}
+
+
+/* estilos del aside */
+aside{
+    flex: 25%;
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border: solid 2px rgb(0, 59, 70);
+    border-radius: 5px;
+    color: rgb(0, 46, 44);
+    text-align: center;
+    
+}
+aside h3{
+    text-shadow: 1px 1px 3px rgb(40, 182, 151);
+}
+
+/* estilos de flip-card */
+.carta-interna{
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.carta:hover .carta-interna{
+    transform: rotateY(180deg);
+}
+.carta-img, .carta-texto{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.carta-img img{
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(0, 46, 58);
+}
+.carta-texto{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 30, 44);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    padding: 25px;
+    font-size: 1vw;
+    box-shadow: 2px 2px 5px rgb(0, 46, 58);
+}
+.carta-texto h2{
+    color: white;
+}
+
+/* estilos de la class video-link */
+.video-link img{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: cover; /* cover para que el video no se deforme*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(0, 46, 58);
+}
+.video-link img:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease; /* suaviza el efecto */
+}
+
+.video-link h4{
+    opacity: 0;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    /* transition: all 0.3s; */
+}
+.video-link h4:hover{
+    opacity: 1;
+}
+
+/* estilos para el contenido de la seccion */
+.main{
+    flex: 75%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.main h1{
+    color: rgb(0, 66, 63);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 161, 126);
+}
+.main h2{
+    color: rgb(0, 66, 63);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.main h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(42, 97, 94);
+    margin: 0;
+}
+.main img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.main p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 66, 63);
+    margin-top: 2px;
+    text-align: center;
+}
+.main .informacion{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 114, 95);
+    padding: 10px;
+    border-radius: 10px;
+}
+.main .informacion:hover{
+    background-color: rgb(0, 44, 42);
+    color: rgb(139, 255, 255);
+}
+
+#vermas{
+    display: block;
+    color: black;
+    margin-top: 40px;
+    text-align: center;
+}
+#vermas:hover{
+    color: rgb(0, 0, 97);
+}
+
+/* estilos para el contenido de la seccion */
+.faber-castell{
+    flex: 75%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.faber-castell h1{
+    color: rgb(0, 66, 63);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgb(0, 161, 126);
+}
+.faber-castell h2{
+    color: rgb(0, 66, 63);
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+.faber-castell h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(42, 97, 94);
+    margin: 0;
+}
+.faber-castell img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.faber-castell p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 66, 63);
+    margin-top: 2px;
+    text-align: center;
+}
+.faber-castell .informacion{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(0, 114, 95);
+    padding: 10px;
+    border-radius: 10px;
+}
+.faber-castell .informacion:hover{
+    background-color: rgb(0, 44, 42);
+    color: rgb(139, 255, 255);
+}
+
+
+/* estilos de footer */
+footer{
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 16, 20);
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    nav, .row{
+        flex-direction: column;
+    }
+    .carta-texto{
+        font-size: 3vw;
+    }
+}
